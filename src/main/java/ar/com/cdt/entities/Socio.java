@@ -9,18 +9,18 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 public class Socio {
 
 	@Id
-	private long id;
+	private String id;
 
 	@Field(type = FieldType.Text)
 	private String nombreCompleto;
 	private String ic;
 	private String plan;
 
-	public long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
