@@ -11,9 +11,9 @@ import ar.com.cdt.entities.Socio;
 @Service
 public interface SocioService {
 
-	List<Socio> getSocios();
+	Iterable<Socio> getSocios();
 
-//	Optional<Socio> getSocioByID(Long id);
+	Optional<Socio> getSocioByID(String id);
 	
 	ResponseEntity<?> saveSocio(Socio socio);
 	

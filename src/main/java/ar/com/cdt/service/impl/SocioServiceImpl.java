@@ -1,6 +1,5 @@
 package ar.com.cdt.service.impl;
 
-import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,14 +17,14 @@ public class SocioServiceImpl implements SocioService {
 	SocioRepository socioRepository;
 
 	@Override
-	public List<Socio> getSocios() {
-		return (List<Socio>) socioRepository.findAll();
+	public  Iterable<Socio> getSocios() {
+		return socioRepository.findAll();
 	}
 
-//	@Override
-//	public Optional<Socio> getSocioByID(Long id) {
-//		return socioRepository.findAllById(id);
-//	}
+	@Override
+	public Optional<Socio> getSocioByID(String id) {
+		return socioRepository.findById(id);
+	}
 
 	@Override
 	public ResponseEntity<?> saveSocio(Socio socio) {

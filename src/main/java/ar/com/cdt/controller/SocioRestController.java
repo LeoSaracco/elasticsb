@@ -30,14 +30,14 @@ public class SocioRestController {
 	SocioService socioService;
 
 	@GetMapping()
-	public List<Socio> list() {
+	public Iterable<Socio> list() {
 		return socioService.getSocios();
 	}
 
-//	@GetMapping("/{id}")
-//	public Optional<Socio> get(@PathVariable Long id) {
-//		return socioService.getSocioByID(id);
-//	}
+	@GetMapping("/{id}")
+	public Optional<Socio> get(@PathVariable String id) {
+		return socioService.getSocioByID(id);
+	}
 
 	@PutMapping()
 	public ResponseEntity<?> put(@RequestBody Socio socio) {
