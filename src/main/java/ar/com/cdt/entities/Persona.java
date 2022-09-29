@@ -36,8 +36,10 @@ public class Persona {
 
 	@Field(type = FieldType.Text)
 	private String telefonoSecundario;
+	
 	@Field(type = FieldType.Text)
 	private String email;
+	
 	@Field(type = FieldType.Text)
 	private String nacionalidad;
 
