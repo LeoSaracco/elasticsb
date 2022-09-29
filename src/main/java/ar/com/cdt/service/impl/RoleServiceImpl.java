@@ -7,7 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import ar.com.cdt.entities.Roles;
-import ar.com.cdt.entities.Skills;
 import ar.com.cdt.repository.RolesRepository;
 import ar.com.cdt.service.RoleService;
 
