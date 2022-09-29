@@ -1,0 +1,397 @@
+{
+	"info": {
+		"_postman_id": "1760709d-42b3-48ed-b948-97831ce63f95",
+		"name": "SDA - Perfiles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Skills",
+			"item": [
+				{
+					"name": "GetAllSkills",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/skills",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"skills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSkillsByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/skills/jHjHiYMBolAuMqAT53HI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"skills",
+								"jHjHiYMBolAuMqAT53HI"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteSkill",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/skills/jHjHiYMBolAuMqAT53HI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"skills",
+								"jHjHiYMBolAuMqAT53HI"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Skill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": null,\n  \"descripcion\": \"Análisis de riesgos\",\n  \"observacion\": \"Gestión\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/skills/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"skills",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "GetAllRoles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetRoleByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/roles/LEgeioMBWFUAACOzY71q",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roles",
+								"LEgeioMBWFUAACOzY71q"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteRole",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/roles/LEgeioMBWFUAACOzY71q",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roles",
+								"LEgeioMBWFUAACOzY71q"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": null,\n  \"descripcion\": \"Maquetador\",\n  \"nivel\": \"Avanzado\",\n  \"observaciones\": \"\",\n  \"requerido\": true,\n  \"senority\": \"Ssr.\",\n  \"skills\": [\n    \"HTML5\",\n    \"CSS3\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/roles/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roles",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Proyectos",
+			"item": [
+				{
+					"name": "GetAllProyectos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/proyectos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"proyectos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProyectoByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/proyectos/LkgsioMBWFUAACOz2L3f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"proyectos",
+								"LkgsioMBWFUAACOz2L3f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProyecto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/proyectos/LUgrioMBWFUAACOz-L36",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"proyectos",
+								"LUgrioMBWFUAACOz-L36"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save proyecto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": null,\n  \"descripcion\": \"SDA - Perfiles\",\n  \"empleados\": [\n    \"Leandro Saracco\"\n  ],\n  \"fechaFin\": \"01/01/2023\",\n  \"fechaInicio\": \"21/01/2022\",\n  \"gestores\": [\n    \"Ariel Olguin\",\n    \"Hernan Mercado\"\n  ],\n  \"observaciones\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/proyectos/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"proyectos",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Personas",
+			"item": [
+				{
+					"name": "GetAllPersonas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/personas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPersonaByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/personas/nm-RioMBCLJZYhLNhqXd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"personas",
+								"nm-RioMBCLJZYhLNhqXd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePersona",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/personas/nW-QioMBCLJZYhLNL6X3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"personas",
+								"nW-QioMBCLJZYhLNL6X3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save persona",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"nm-RioMBCLJZYhLNhqXd\",\n  \"nombre\": \"Leandro\",\n  \"apellido\": \"Saracco\",\n  \"dni\": \"39918206\",\n  \"email\": \"lsaracco@cdt.com.ar\",\n  \"fechaIngreso\": \"13/01/2020\",\n  \"fotoLegajo\": \"/tmp/empleados/lsaracco/profile.jpg\",\n  \"gestor\": false,\n  \"horasMensualesPorContrato\": \"180\",\n  \"horasReales\": \"140\",\n  \"nacionalidad\": \"Argentina\",\n  \"numeroLegajo\": \"1905\",\n  \"observaciones\": \"\",\n  \"porcentajeContractual\": \"40&\",\n  \"porcentajeReal\": \"string\",\n  \"disponibilidad\": \"25%\",\n   \"proyectos\": [\n    \"ADS\",\n    \"BMS\",\n    \"AT\"\n  ],\n  \"rol\": [\n    \"TO\",\n    \"Developer FullStack\"\n  ],\n  \"senority\": \"string\",\n  \"skills\": [\n    \"Java\",\n    \"Análisis de riesgo\",\n    \"React\",\n    \"Linux\",\n    \"Docker\",\n    \"Networking\",\n    \"SpringBoot\"\n  ],\n  \"telefono\": \"02224502247\",\n  \"telefonoSecundario\": \"481312\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/personas/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"personas",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

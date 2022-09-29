@@ -36,21 +36,21 @@ public class Persona {
 
 	@Field(type = FieldType.Text)
 	private String telefonoSecundario;
-	
+
 	@Field(type = FieldType.Text)
 	private String email;
-	
+
 	@Field(type = FieldType.Text)
 	private String nacionalidad;
 
 	@Field(type = FieldType.Text)
-	private ArrayList<Roles> rol;
+	private ArrayList<String> rol;
 
 	@Field(type = FieldType.Text)
-	private ArrayList<Proyectos> proyectos;
+	private ArrayList<String> proyectos;
 
 	@Field(type = FieldType.Text)
-	private ArrayList<Skills> skills;
+	private ArrayList<String> skills;
 
 	@Field(type = FieldType.Text)
 	private String senority;
@@ -62,7 +62,7 @@ public class Persona {
 	private String porcentajeContractual;
 
 	@Field(type = FieldType.Text)
-	private String porcentajeREal;
+	private String porcentajeReal;
 
 	@Field(type = FieldType.Text)
 	private String horasMensualesPorContrato;
@@ -164,27 +164,27 @@ public class Persona {
 		this.nacionalidad = nacionalidad;
 	}
 
-	public ArrayList<Roles> getRol() {
+	public ArrayList<String> getRol() {
 		return rol;
 	}
 
-	public void setRol(ArrayList<Roles> rol) {
+	public void setRol(ArrayList<String> rol) {
 		this.rol = rol;
 	}
 
-	public ArrayList<Proyectos> getProyectos() {
+	public ArrayList<String> getProyectos() {
 		return proyectos;
 	}
 
-	public void setProyectos(ArrayList<Proyectos> proyectos) {
+	public void setProyectos(ArrayList<String> proyectos) {
 		this.proyectos = proyectos;
 	}
 
-	public ArrayList<Skills> getSkills() {
+	public ArrayList<String> getSkills() {
 		return skills;
 	}
 
-	public void setSkills(ArrayList<Skills> skills) {
+	public void setSkills(ArrayList<String> skills) {
 		this.skills = skills;
 	}
 
@@ -212,12 +212,12 @@ public class Persona {
 		this.porcentajeContractual = porcentajeContractual;
 	}
 
-	public String getPorcentajeREal() {
-		return porcentajeREal;
+	public String getPorcentajeReal() {
+		return porcentajeReal;
 	}
 
-	public void setPorcentajeREal(String porcentajeREal) {
-		this.porcentajeREal = porcentajeREal;
+	public void setPorcentajeReal(String porcentajeReal) {
+		this.porcentajeReal = porcentajeReal;
 	}
 
 	public String getHorasMensualesPorContrato() {
@@ -259,7 +259,7 @@ public class Persona {
 				+ ", telefono=" + telefono + ", telefonoSecundario=" + telefonoSecundario + ", email=" + email
 				+ ", nacionalidad=" + nacionalidad + ", rol=" + rol + ", proyectos=" + proyectos + ", skills=" + skills
 				+ ", senority=" + senority + ", gestor=" + gestor + ", porcentajeContractual=" + porcentajeContractual
-				+ ", porcentajeREal=" + porcentajeREal + ", horasMensualesPorContrato=" + horasMensualesPorContrato
+				+ ", porcentajeReal=" + porcentajeReal + ", horasMensualesPorContrato=" + horasMensualesPorContrato
 				+ ", horasReales=" + horasReales + ", disponibilidad=" + disponibilidad + ", observaciones="
 				+ observaciones + "]";
 	}

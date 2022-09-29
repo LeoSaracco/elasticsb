@@ -7,11 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import ar.com.cdt.entities.Skills;
-import ar.com.cdt.entities.Socio;
 import ar.com.cdt.repository.SkillsRepository;
-import ar.com.cdt.repository.SocioRepository;
 import ar.com.cdt.service.SkillService;
-import ar.com.cdt.service.SocioService;
 
 @Service
 public class SkillServiceImpl implements SkillService {
