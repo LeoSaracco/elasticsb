@@ -46,6 +46,7 @@ public class ProyectoServiceImpl implements ProyectoService {
 				proyectos.setEstado("Activo");
 			}
 			proyectos.setFechaInicio(proyectos.getFechaInicio().replace("/", "-"));
+			proyectos.setFechaFin(proyectos.getFechaFin().replace("/", "-"));
 			Proyectos save = proyectosRepository.save(proyectos);
 			return ResponseEntity.ok(save);
 		} catch (Exception e) {
