@@ -1,5 +1,7 @@
 package ar.com.cdt.service.impl;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +31,21 @@ public class ProyectoServiceImpl implements ProyectoService {
 	@Override
 	public ResponseEntity<?> saveProyectos(Proyectos proyectos) {
 		try {
+			SimpleDateFormat sdformat = new SimpleDateFormat("dd-MM-yyyy");
+			Date now = new Date(System.currentTimeMillis());
+			//System.out.println(sdformat.format(now));
+			Date fechaInicio = sdformat.parse(proyectos.getFechaInicio().replace("/", "-"));
+			// System.out.println(sdformat.format(fechaInicio));
+			// Veo cuando cargan las fechas de inicio de un proyecto y en base a eso
+			// determino si está activo o no
+			if (fechaInicio.compareTo(now) > 0) {
+				System.out.println("Proyecto inactivo");
+				proyectos.setEstado("Inactivo");
+			} else {
+				System.out.println("Proyecto activo");
+				proyectos.setEstado("Activo");
+			}
+			proyectos.setFechaInicio(proyectos.getFechaInicio().replace("/", "-"));
 			Proyectos save = proyectosRepository.save(proyectos);
 			return ResponseEntity.ok(save);
 		} catch (Exception e) {

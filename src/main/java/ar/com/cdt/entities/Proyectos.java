@@ -29,6 +29,9 @@ public class Proyectos {
 	private ArrayList<String> empleados;
 
 	@Field(type = FieldType.Text)
+	private String estado;
+	
+	@Field(type = FieldType.Text)
 	private String observaciones;
 
 	public String getId() {
@@ -79,6 +82,14 @@ public class Proyectos {
 		this.empleados = empleados;
 	}
 
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
 	public String getObservaciones() {
 		return observaciones;
 	}
@@ -90,7 +101,7 @@ public class Proyectos {
 	@Override
 	public String toString() {
 		return "Proyectos [id=" + id + ", descripcion=" + descripcion + ", fechaInicio=" + fechaInicio + ", fechaFin="
-				+ fechaFin + ", gestores=" + gestores + ", empleados=" + empleados + ", observaciones=" + observaciones
-				+ "]";
+				+ fechaFin + ", gestores=" + gestores + ", empleados=" + empleados + ", estado=" + estado
+				+ ", observaciones=" + observaciones + "]";
 	}
 }
