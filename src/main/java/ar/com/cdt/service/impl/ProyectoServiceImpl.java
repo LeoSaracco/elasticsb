@@ -33,7 +33,7 @@ public class ProyectoServiceImpl implements ProyectoService {
 		try {
 			SimpleDateFormat sdformat = new SimpleDateFormat("dd-MM-yyyy");
 			Date now = new Date(System.currentTimeMillis());
-			//System.out.println(sdformat.format(now));
+			// System.out.println(sdformat.format(now));
 			Date fechaInicio = sdformat.parse(proyectos.getFechaInicio().replace("/", "-"));
 			// System.out.println(sdformat.format(fechaInicio));
 			// Veo cuando cargan las fechas de inicio de un proyecto y en base a eso
@@ -63,5 +63,11 @@ public class ProyectoServiceImpl implements ProyectoService {
 		} catch (Exception e) {
 			return (ResponseEntity<?>) ResponseEntity.internalServerError();
 		}
+	}
+
+	@Override
+	public Boolean checkProyectosDates() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 }

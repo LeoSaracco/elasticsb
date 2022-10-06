@@ -17,4 +17,6 @@ public interface ProyectoService {
 	ResponseEntity<?> saveProyectos(Proyectos proyectos);
 	
 	ResponseEntity<?> deleteProyectos(String id);
+	
+	Boolean checkProyectosDates();
 }
