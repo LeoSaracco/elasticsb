@@ -7,6 +7,8 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
+import ar.com.cdt.dto.DTOProyectoPersona;
+
 @Document(indexName = "persona")
 public class Persona {
 
@@ -47,7 +49,7 @@ public class Persona {
 	private ArrayList<String> rol;
 
 	@Field(type = FieldType.Text)
-	private ArrayList<String> proyectos;
+	private ArrayList<DTOProyectoPersona> proyectos;
 
 	@Field(type = FieldType.Text)
 	private ArrayList<String> skills;
@@ -113,7 +115,7 @@ public class Persona {
 	}
 
 	public void setFechaIngreso(String fechaIngreso) {
-		this.fechaIngreso = fechaIngreso;
+		this.fechaIngreso = fechaIngreso.replace("/", "-");
 	}
 
 	public String getNumeroLegajo() {
@@ -172,11 +174,11 @@ public class Persona {
 		this.rol = rol;
 	}
 
-	public ArrayList<String> getProyectos() {
+	public ArrayList<DTOProyectoPersona> getProyectos() {
 		return proyectos;
 	}
 
-	public void setProyectos(ArrayList<String> proyectos) {
+	public void setProyectos(ArrayList<DTOProyectoPersona> proyectos) {
 		this.proyectos = proyectos;
 	}
 

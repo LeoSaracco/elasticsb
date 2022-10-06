@@ -131,7 +131,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/roles/LEgeioMBWFUAACOzY71q",
+							"raw": "http://localhost:8080/api/roles/jnjgiYMBolAuMqATYHG2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -140,7 +140,7 @@
 							"path": [
 								"api",
 								"roles",
-								"LEgeioMBWFUAACOzY71q"
+								"jnjgiYMBolAuMqATYHG2"
 							]
 						}
 					},
@@ -271,7 +271,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": null,\n  \"descripcion\": \"SDA - Perfiles\",\n  \"empleados\": [\n    \"Leandro Saracco\"\n  ],\n  \"fechaFin\": \"01/01/2023\",\n  \"fechaInicio\": \"21/01/2022\",\n  \"gestores\": [\n    \"Ariel Olguin\",\n    \"Hernan Mercado\"\n  ],\n  \"observaciones\": \"\"\n}",
+							"raw": "{\n  \"id\": null,\n  \"descripcion\": \"SDA - Perfiles\",\n  \"empleados\": [\n    \"Leandro Saracco\"\n  ],\n  \"fechaFin\": \"01/01/2023\",\n  \"fechaInicio\": \"21/01/2022\",\n  \"gestores\": [\n    \"Ariel Olguin\",\n    \"Hernan Mercado\"\n  ],\n  \"estado\": \"\",\n  \"observaciones\": \"\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -368,7 +368,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": \"nm-RioMBCLJZYhLNhqXd\",\n  \"nombre\": \"Leandro\",\n  \"apellido\": \"Saracco\",\n  \"dni\": \"39918206\",\n  \"email\": \"lsaracco@cdt.com.ar\",\n  \"fechaIngreso\": \"13/01/2020\",\n  \"fotoLegajo\": \"/tmp/empleados/lsaracco/profile.jpg\",\n  \"gestor\": false,\n  \"horasMensualesPorContrato\": \"180\",\n  \"horasReales\": \"140\",\n  \"nacionalidad\": \"Argentina\",\n  \"numeroLegajo\": \"1905\",\n  \"observaciones\": \"\",\n  \"porcentajeContractual\": \"40&\",\n  \"porcentajeReal\": \"string\",\n  \"disponibilidad\": \"25%\",\n   \"proyectos\": [\n    \"ADS\",\n    \"BMS\",\n    \"AT\"\n  ],\n  \"rol\": [\n    \"TO\",\n    \"Developer FullStack\"\n  ],\n  \"senority\": \"string\",\n  \"skills\": [\n    \"Java\",\n    \"Análisis de riesgo\",\n    \"React\",\n    \"Linux\",\n    \"Docker\",\n    \"Networking\",\n    \"SpringBoot\"\n  ],\n  \"telefono\": \"02224502247\",\n  \"telefonoSecundario\": \"481312\"\n}",
+							"raw": "{\n  \"id\": \"nm-RioMBCLJZYhLNhqXd\",\n  \"nombre\": \"Leandro\",\n  \"apellido\": \"Saracco\",\n  \"dni\": \"39918206\",\n  \"email\": \"lsaracco@cdt.com.ar\",\n  \"fechaIngreso\": \"13/01/2020\",\n  \"fotoLegajo\": \"/tmp/empleados/lsaracco/profile.jpg\",\n  \"gestor\": false,\n  \"horasMensualesPorContrato\": \"180\",\n  \"horasReales\": \"140\",\n  \"nacionalidad\": \"Argentina\",\n  \"numeroLegajo\": \"1905\",\n  \"observaciones\": \"\",\n  \"porcentajeContractual\": \"40%\",\n  \"porcentajeReal\": \"string\",\n  \"disponibilidad\": \"25%\",\n  \"proyectos\": [\n    {\n      \"descripcion\": \"ADS\",\n      \"facturable\": false,\n      \"fin\": \"01/01/2023\",\n      \"inicio\": \"01/01/2024\"\n    },\n    {\n      \"descripcion\": \"SaludSoft\",\n      \"facturable\": true,\n      \"fin\": \"01/01/2023\",\n      \"inicio\": \"01/01/2024\"\n    }\n  ],\n  \"rol\": [\n    \"TO\",\n    \"Developer FullStack\"\n  ],\n  \"senority\": \"Sr\",\n  \"skills\": [\n    \"Java\",\n    \"Análisis de riesgo\",\n    \"React\",\n    \"Linux\",\n    \"Docker\",\n    \"Networking\",\n    \"SpringBoot\"\n  ],\n  \"telefono\": \"02224502247\",\n  \"telefonoSecundario\": \"481312\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
