@@ -2,6 +2,7 @@ package ar.com.cdt.service.impl;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Optional;
 
@@ -70,6 +71,7 @@ public class ProyectoServiceImpl implements ProyectoService {
 	public Boolean checkProyectosDates() throws ParseException {
 		try {
 			Iterable<Proyectos> listaProyectos = proyectosRepository.findAll();
+			ArrayList<Proyectos> listaProyectosClear = new ArrayList<>();
 			SimpleDateFormat sdformat = new SimpleDateFormat("dd-MM-yyyy");
 			Date now = new Date(System.currentTimeMillis());
 //			System.out.println(sdformat.format(now));
@@ -85,8 +87,9 @@ public class ProyectoServiceImpl implements ProyectoService {
 //					System.out.println("Proyecto Inactivo");
 					proyectos.setEstado("Inactivo");
 				}
-				proyectosRepository.save(proyectos);
+				listaProyectosClear.add(proyectos);
 			}
+			proyectosRepository.saveAll(listaProyectosClear);
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();
