@@ -19,7 +19,6 @@ import ar.com.cdt.service.SocioService;
  *
  * @author lsaracco
  */
-
 @RestController
 @RequestMapping("/socios")
 public class SocioRestController {

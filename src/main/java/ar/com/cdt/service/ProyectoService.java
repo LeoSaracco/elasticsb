@@ -15,6 +15,8 @@ public interface ProyectoService {
 
 	Optional<Proyectos> getProyectosByID(String id);
 	
+	Proyectos getProyectosByDescripcion(String descripcion);
+	
 	ResponseEntity<?> saveProyectos(Proyectos proyectos);
 	
 	ResponseEntity<?> deleteProyectos(String id);

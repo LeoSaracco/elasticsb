@@ -16,9 +16,6 @@ public class Scheduler {
 	@Autowired
 	ProyectoService proyectoService;
 
-	// todos los días a las 12
-	// @Scheduled(cron = "0 0 0 * * ?")
-	// cada 10 seg
 	@Scheduled(cron = "${scheduler.check.proyects.status}")
 	public void scheduleCheckProyectosDates() throws ParseException {
 		System.out.println("===== Iniciando scheduler scheduleCheckProyectosDates");

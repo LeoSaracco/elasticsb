@@ -31,6 +31,11 @@ public class ProyectoServiceImpl implements ProyectoService {
 	}
 
 	@Override
+	public Proyectos getProyectosByDescripcion(String descripcion) {
+		return proyectosRepository.findByDescripcion(descripcion);
+	}
+
+	@Override
 	public ResponseEntity<?> saveProyectos(Proyectos proyectos) {
 		try {
 			SimpleDateFormat sdformat = new SimpleDateFormat("dd-MM-yyyy");

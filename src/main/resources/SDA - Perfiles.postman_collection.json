@@ -271,7 +271,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": null,\n  \"descripcion\": \"SDA - Perfiles\",\n  \"empleados\": [\n    \"Leandro Saracco\"\n  ],\n  \"fechaFin\": \"01/01/2023\",\n  \"fechaInicio\": \"21/01/2022\",\n  \"gestores\": [\n    \"Ariel Olguin\",\n    \"Hernan Mercado\"\n  ],\n  \"estado\": \"\",\n  \"observaciones\": \"\"\n}",
+							"raw": "{\n  \"id\": \"QPDKrYMBhkMfa-zJZtgT\",\n  \"descripcion\": \"SDA - Perfiles\",\n  \"empleados\": [\n    \"Leandro Saracco\"\n  ],\n  \"fechaFin\": \"08/10/2022\",\n  \"fechaInicio\": \"21/01/2022\",\n  \"gestores\": [\n    \"Ariel Olguin\",\n    \"Hernan Mercado\"\n  ],\n  \"estado\": \"\",\n  \"observaciones\": \"\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -386,6 +386,41 @@
 								"api",
 								"personas",
 								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"test@test.com\",\n    \"password\": \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"auth"
 							]
 						}
 					},
